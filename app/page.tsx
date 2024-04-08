@@ -1,13 +1,13 @@
 import React from "react";
 import Link from "next/link";
-import AddToCart from "./components/AddToCart";
+import ProductCard from "./components/ProductCard";
 
 export default function Home() {
   return (
     <main>
       <h1>Hello World</h1>
       <Link href="/users">Users</Link>
-      <AddToCart />
+      <ProductCard />
     </main>
   );
 }
