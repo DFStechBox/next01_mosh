@@ -7,7 +7,7 @@ interface Props {
 
 const ProductPage = ({params: {slug}}: Props) => {
   return (
-    <div>ProductPage</div>
+    <div>ProductPage {slug}</div>
   )
 }
 
