@@ -1,13 +1,13 @@
-import React from 'react'
+
+import Link from "next/link";
 
 interface User {
-    id: number;
+  id: number;
   name: string;
-  email: string
-  }
+  email: string;
+}
 
-const UserTable =async () => {
-
+const UserTable = async () => {
   const res = await fetch("https://jsonplaceholder.typicode.com/users", {
     cache: "no-store",
   });
@@ -16,8 +16,12 @@ const UserTable =async () => {
     <table className="table table-bordered">
       <thead>
         <tr>
-          <th>Name</th>
-          <th>Email</th>
+          <th>
+            <Link href="/users?sortOrder=Name">Name</Link>
+          </th>
+          <th>
+            <Link href="/users?sortOrder=Email">Email</Link>
+          </th>
         </tr>
       </thead>
       <tbody>
@@ -30,6 +34,6 @@ const UserTable =async () => {
       </tbody>
     </table>
   );
-}
+};
 
-export default UserTable
+export default UserTable;
