@@ -1,10 +1,10 @@
 import React from "react";
 interface LayoutProps {
-  children: ReactNode;
+  children: React.ReactNode;
 }
 
 const Layout: FC<LayoutProps> = ({ children }) => {
-  return <div className="bg-red-200 h-screen" >{children}</div>;
+  return <div className="bg-yellow-200 h-screen">{children}</div>;
 };
 
 export default Layout;
