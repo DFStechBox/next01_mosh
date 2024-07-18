@@ -9,8 +9,8 @@ const UsersPage = async () => {
 
   return (
     <>
-      <h1>USERS</h1>
-      <p>{new Date().toLocaleTimeString()}</p>
+      <h1>Users</h1>
+      {/* <p>{new Date().toLocaleTimeString()}</p> */}
       <hr />
       <UserTable />
       
